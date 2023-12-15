@@ -2,9 +2,9 @@
 <rss version="2.0">
 
 <channel>
-  <title>Yan Holtz Homepage</title>
-  <link>https://www.yan-holtz.com</link>
-  <description>Yan Holtz's blog on statistics, R and Dataviz</description>
+  <title>Aditya Patel Homepage</title>
+  <link>https://www.theadityapatel.com</link>
+  <description>Aditya Patel's blog on Machine Learning, Stats and Dataviz</description>
   <item>
     <title>From Data to Viz - A classification of graphics based on input data format</title>
     <link>https://www.yan-holtz.com/blog/dataToViz.html</link>
