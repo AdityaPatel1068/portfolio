@@ -429,50 +429,37 @@
   <!-- Change image size o have height = 445: convert tmp.png -resize 380x445 new.png -->
   <!-- Add white space on the side to have the good size: convert -size 380x445 xc:white new.png  -gravity center -composite output.png -->
   <!-- Or adapt to add height on top / bottom -->
+<style>
+  .explanation_portfolio {
+    font-size: 14px;
+    margin: 20px;
+  }
+</style>
 
-  <style>
-    .explanation_portfolio {
-      font-size: 14px;
-      margin: 20px;
-    }
-  </style>
-
-  <section class="bg-light" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">A glimpse of the projects I've been working on</h3>
-          <div id="portfolio-button-container">
-            <button class="btn btn-secondary active" data-portfolio-section="all">Show all</button>
-            <button class="btn btn-secondary" data-portfolio-section="mining">Data mining</button>
-            <button class="btn btn-secondary" data-portfolio-section="dataviz">Dataviz</button>
-            <button class="btn btn-secondary" data-portfolio-section="paper">Scientific paper</button>
-            <button class="btn btn-secondary" data-portfolio-section="dashboard">Dashboard</button>
-            <button class="btn btn-secondary" data-portfolio-section="shiny">Shiny</button>
-          </div>
-          <br>
-        </div>
+<section class="bg-light" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Portfolio</h2>
+        <h3 class="section-subheading text-muted">A glimpse of the projects I've been working on</h3>
       </div>
-      <br><br>
-      <div id="portfolio-items" class="row">
-
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper dashboard shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#ukbGeoApp">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Genetics in the UK</p>
-                <hr>
-                <p class="explanation_portfolio">Assessing the geographic distribution of genetic traits<br></p>
-              </div>
+    </div>
+    <br><br>
+    <div id="portfolio-items" class="row">
+      <div class="col-md-3 col-sm-6 portfolio-item show column">
+        <a class="portfolio-link" data-toggle="modal" href="#ukbGeoApp">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <p>Genetics in the UK</p>
+              <hr>
+              <p class="explanation_portfolio">Assessing the geographic distribution of genetic traits<br></p>
             </div>
-            <img class="img-fluid" src="img/portfolio/UKB_geo.png" alt="">
-          </a>
-        </div>
+          </div>
+          <img class="img-fluid" src="img/portfolio/UKB_geo.png" alt="">
+        </a>
+      </div>
 
-
+      
         <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper dashboard shiny">
           <a class="portfolio-link" data-toggle="modal" href="#genMapComp">
             <div class="portfolio-hover">
