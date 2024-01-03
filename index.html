@@ -82,15 +82,16 @@
 
 <!-- ======================= (2) Landing  Section ======================= -->
 
-<header class="masthead">
-<div id="particles-js"></div>
-  <div class="textlanding">
-      <img width="90px" style="margin-bottom: 20px; margin-right: 10px; margin-left: 10px;"
+<header class="masthead" style="text-align: center; max-width: 100%; margin: 0 auto;">
+  <div id="particles-js"></div>
+  <div class="textlanding" style="text-align: center; max-width: 100%;">
+
+    <img width="90px" style="margin-bottom: 20px; margin-right: 10px; margin-left: 10px;"
           src="img/logo/Home_single_big.png">
       <p style="font-size: 24px; margin: 0; padding: 0;">Aditya Patel</p>
       <hr style="height: 1px; border: none; color: #333; background-color: #333; margin: 0 auto; width: 22%;">
 
-      <p style="margin: 0; text-align: center; font-size: 18px; max-width: 100%;">
+      <p style="margin: 0; text-align: center; font-size: 18px; max-width: 100%; padding: 0 15px;">
           Hello, I'm Aditya Patel, a passionate data scientist and machine learning engineer. Currently, I am pursuing
           my master's degree in Data Science at NJIT, where I am expanding my expertise in the field.
           My hands-on experience extends across diverse projects, covering areas such as machine learning, data
@@ -125,88 +126,86 @@
 </header>
 
 
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/appHome.js"></script>
 
+<!-- =======================  DESCRIPTION SECTION ======================= -->
 
-  <!-- =======================  DESCRIPTION SECTION ======================= -->
-
+<!-- Description Section -->
 <section id="description" class="bg-light">
   <div class="container">
-      <div class="row">
-          <div class="col-lg-4 text-center">
-              <img class="img-fluid" src="img/team/YH_pic_square.png" alt="Aditya Patel profile picture"
-                  style="margin-bottom: 30px">
-          </div>
-          <div class="col-lg-8 text-center text-md-left h-100">
-              <p>Greetings, I'm Aditya.</p>
-
-              <p>Embarking on a journey filled with diverse experiences, my professional trajectory took a pivotal turn after completing my undergraduate studies in Mechanical Engineering. Initial exposure to the corporate world in sales refined crucial business skills and interpersonal acumen, preparing me for client interactions and fostering my growth. During this period, a burgeoning interest in data and its possibilities started to take root.</p>
-
-              <p>Initiating self-learning in SQL, Python, and AWS marked the beginning of my venture into the realm of data. However, I recognized the need for structured learning under the guidance of qualified professionals. To achieve this, I strategically pursued my master's degree at the prestigious New Jersey Institute of Technology (NJIT), serving as both a catalyst and a compass pointing me in the right direction.</p>
-
-              <p>My tenure at NJIT has been marked by impactful contributions to various projects. I delved into machine learning endeavors, such as the ASL interpretation project, and spearheaded a DBMS initiative for creating a universal athlete contract management system. Engaging in data mining and processing projects, including the IMDB Studio Analyst and Mining, further enriched my skill set.</p>
-
-              <p>Currently, I am working on my master's project in weather forecasting under the guidance of Professor<a href="https://gracexu182.github.io" target="_blank" rel="noopener noreferrer"> Mengjia Xu</a>.</p>
-
-              <p>Additionally, my keen interest in finance and policy formation has equipped me with a nuanced understanding of the underlying implications and effects. I am poised to contribute meaningfully to the intersection of data science, technology, and impactful decision-making.</p>
-
-              <a class="btn btn-secondary btn-l text-uppercase" href="resume.pdf">Resume</a>
-              <!-- Update the href attribute with the correct path to your resume folder -->
-
-              <a class="btn btn-secondary btn-l text-uppercase" href="https://github.com/AdityaPatel1068">Github</a>
-          </div>
+    <div class="row align-items-center">
+      <!-- Text Content Column -->
+      <div class="col-lg-8 text-center text-lg-left order-lg-2">
+        <p>Greetings, I'm Aditya.</p>
+  
+        <p>Embarking on a journey filled with diverse experiences, my professional trajectory took a pivotal turn after completing my undergraduate studies in Mechanical Engineering. Initial exposure to the corporate world in sales refined crucial business skills and interpersonal acumen, preparing me for client interactions and fostering my growth. During this period, a burgeoning interest in data and its possibilities started to take root.</p>
+  
+        <p>Initiating self-learning in SQL, Python, and AWS marked the beginning of my venture into the realm of data. However, I recognized the need for structured learning under the guidance of qualified professionals. To achieve this, I strategically pursued my master's degree at the prestigious New Jersey Institute of Technology (NJIT), serving as both a catalyst and a compass pointing me in the right direction.</p>
+  
+        <p>My tenure at NJIT has been marked by impactful contributions to various projects. I delved into machine learning endeavors, such as the ASL interpretation project, and spearheaded a DBMS initiative for creating a universal athlete contract management system. Engaging in data mining and processing projects, including the IMDB Studio Analyst and Mining, further enriched my skill set.</p>
+  
+        <p>Currently, I am working on my master's project in weather forecasting under the guidance of Professor<a href="https://gracexu182.github.io" target="_blank" rel="noopener noreferrer"> Mengjia Xu</a>.</p>
+  
+        <p>Additionally, my keen interest in finance and policy formation has equipped me with a nuanced understanding of the underlying implications and effects. I am poised to contribute meaningfully to the intersection of data science, technology, and impactful decision-making.</p>
+  
+        <!-- Buttons -->
+        <div class="mt-4">
+          <a class="btn btn-secondary btn-l text-uppercase mr-2" href="resume.pdf">Resume</a>
+          <a class="btn btn-secondary btn-l text-uppercase" href="https://github.com/AdityaPatel1068">Github</a>
+        </div>
       </div>
+  
+      <!-- Profile Picture Column -->
+      <div class="col-lg-4 text-center order-lg-1">
+        <img class="img-fluid mb-4 mb-lg-0" src="img/team/YH_pic_square.png" alt="Aditya Patel profile picture">
+      </div>
+    </div>
   </div>
-</section>
+  
+  
+  
 
-    <div class="row hide-if-small-screen" style="padding-top: 5%">
+<!-- Timeline Section -->
+
+  <div class="row hide-if-small-screen" style="padding-top: 10%">
       <div class="col-lg-12 text-center">
           <svg width="1000" height="100">
               <line x1="0" y1="50" x2="1000" y2="50" style="stroke:black; stroke-width:1.5"></line>
-  
+
               <!-- Byjus -->
               <a href="https://byjus.com" target="_blank" rel="noopener noreferrer">
                   <circle cx="30" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2"></circle>
                   <text text-anchor="middle" x="30" y="80" fill="black">2019</text>
-                  <text font-size="13" text-anchor="middle" x="220" y="30" fill="black">  Business Development Associate</text>
-                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="220" y="80" fill="#808080">Byju's
-                      Think &amp; Learn </text>
+                  <text font-size="13" text-anchor="middle" x="220" y="30" fill="black">Business Development Associate</text>
+                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="220" y="80" fill="#808080">Byju's Think &amp; Learn </text>
               </a>
-  
+
               <!-- Capline Services -->
               <a href="https://www.caplinedentalservices.com" target="_blank" rel="noopener noreferrer">
                   <circle cx="400" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2"></circle>
                   <text text-anchor="middle" x="400" y="80" fill="black">2022</text>
                   <text font-size="13" text-anchor="middle" x="520" y="30" fill="black">Business Analyst</text>
-                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="520" y="80" fill="#808080">Capline
-                      Services</text>
+                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="520" y="80" fill="#808080">Capline Services</text>
               </a>
-  
+
               <!-- NJIT -->
               <a href="https://www.njit.edu/" target="_blank" rel="noopener noreferrer">
                   <circle cx="650" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2"></circle>
                   <text text-anchor="middle" x="650" y="80" fill="black">2023</text>
                   <text font-size="13" text-anchor="middle" x="820" y="30" fill="black">Ms Data Science</text>
-                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="820" y="80" fill="#808080">New
-                      Jersey Institute of Technology</text>
+                  <text style="font-style: italic" font-size="13" text-anchor="middle" x="820" y="80" fill="#808080">New Jersey Institute of Technology</text>
               </a>
-  
+
               <!-- 2024 -->
               <text text-anchor="middle" x="970" y="80" fill="black">2024</text>
               <circle cx="970" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2"></circle>
           </svg>
       </div>
   </div>
-  
-          
-
-          
-          
-
-        </svg>
-      </div>
-    </div>
-  
 </section>
+
 
 
 <!-- =======================  SERVICES SECTION ======================= -->
@@ -582,30 +581,52 @@
 
 
 <!-- ======================== BLOG SECTION ============================ -->
-  <section id="blog" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center" style="padding-bottom: 3%">
-          <p style="display:inline; font-size: 35px">BLOG</p>
-          <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;">
-          <h3 class="section-subheading text-muted">Explore my latest blog posts on Google Blogger</h3>
-        </div>
-        <br><br>
-  
-        <div class="col-lg-12 text-center" style="padding-bottom: 3%">
-          <!-- Link to your Google Blogger page -->
-          <a href="https://your-blogger-url.com" target="_blank">
-            <img src="blogger_logo.png" alt="Blogger Logo" width="150" height="150">
-          </a>
-        </div>
-  
-        <div class="col-lg-12 text-left" style="padding-bottom: 3%">
-          <a class="btn btn-primary btn-xl text-uppercase" href="https://your-blogger-url.com" target="_blank">Visit Blogger</a>
-        </div>
+<section id="blog" class="bg-light" style="margin-top: 0px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p style="display:inline; font-size: 35px; margin-bottom: 10px;">BLOG</p>
+        <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;">
+        <p class="section-subheading text-muted" style="margin-bottom: 30px;">
+          Explore my latest blog posts covering finance, data, AI, ML, and recent works on Google Blogger.
+        </p>
       </div>
     </div>
-  </section>
 
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <!-- Link to your Google Blogger page -->
+        <a href="https://blog.theadityapatel.com" target="_blank">
+          <!-- Removed Blogger Logo to reduce clutter -->
+          <!-- <img src="blogger_logo.png" alt="Blogger Logo" width="150" height="150"> -->
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <a class="btn btn-primary btn-sm text-uppercase" href="https://blog.theadityapatel.com" target="_blank" style="text-decoration: none; color: black; width: fit-content; margin: 0 auto; margin-bottom: 2em;">Visit Blogger</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- First LinkedIn Post -->
+      <div class="col-lg-4 text-center">
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share/6961934289823260672" height="266" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+      </div>
+
+      <!-- Second LinkedIn Post -->
+      <div class="col-lg-4 text-center">
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share/6881717637643042817" height="266" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+      </div>
+
+      <!-- Third LinkedIn Post -->
+      <div class="col-lg-4 text-center">
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share/YOUR_THIRD_POST_ID" height="266" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -713,21 +734,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <!-- ======================= CONTACT SECTION =============================== -->
 
   <section id="contact" class="bg-light">
-    <div class="container">
+    <div class="container" >
       <div class="row">
         <div class="col-lg-2 text-center"></div>
         <div class="col-lg-8 text-center">
