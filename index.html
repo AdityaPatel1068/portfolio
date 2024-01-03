@@ -82,15 +82,15 @@
 
 <!-- ======================= (2) Landing  Section ======================= -->
 
-<header class="masthead" style="text-align: center;">
+<header class="masthead" style="text-align: center; max-width: 70%; margin: 0 auto;">
   <div id="particles-js"></div>
-  <div class="textlanding" style="text-align: center; max-width: 80%; margin: 0 auto;">
+  <div class="textlanding" style="text-align: center; max-width: 100%;">
       <img width="90px" style="margin-bottom: 20px; margin-right: 10px; margin-left: 10px;"
           src="img/logo/Home_single_big.png">
       <p style="font-size: 24px; margin: 0; padding: 0;">Aditya Patel</p>
       <hr style="height: 1px; border: none; color: #333; background-color: #333; margin: 0 auto; width: 50%;">
 
-      <p style="margin: 0; text-align: center; font-size: 18px;">
+      <p style="margin: 0; text-align: center; font-size: 18px; max-width: 100%;">
           Hello, I'm Aditya Patel, a passionate data scientist and machine learning engineer. Currently, I am pursuing
           my master's degree in Data Science at NJIT, where I am expanding my expertise in the field.
           My hands-on experience extends across diverse projects, covering areas such as machine learning, data
@@ -123,6 +123,8 @@
       </ul>
   </div>
 </header>
+
+
 
 
   <!-- =======================  DESCRIPTION SECTION ======================= -->
@@ -207,7 +209,7 @@
 </section>
 
 
-  <!-- =======================  SERVICES SECTION ======================= -->
+<!-- =======================  SERVICES SECTION ======================= -->
   <!--
 
   <style>
@@ -285,12 +287,10 @@
   </section>
 
 -->
-  <!-- ======================================================================= -->
 
 
-
-  <!-- ======================== WEBSITE SECTION ================================ -->
-<!--
+<!-- ======================== WEBSITE SECTION ================================ -->
+  <!--
 
   <section class="" id="website" style="padding-top: 0px; padding-bottom: 0px">
     <div class="parallaxwebsite">
@@ -376,10 +376,13 @@
 
 
 <!-- ======================== PORTFOLIO SECTION ============================ -->
-<!-- Images must be 380 x 445, resize them with -->
-<!-- Change image size o have height = 445: convert tmp.png -resize 380x445 new.png -->
-<!-- Add white space on the side to have the good size: convert -size 380x445 xc:white new.png  -gravity center -composite output.png -->
-<!-- Or adapt to add height on top / bottom -->
+
+
+<!-- ======================== Portfolio SECTION ================================ -->
+    <!-- Images must be 380 x 445, resize them with -->
+    <!-- Change image size o have height = 445: convert tmp.png -resize 380x445 new.png -->
+    <!-- Add white space on the side to have the good size: convert -size 380x445 xc:white new.png  -gravity center -composite output.png -->
+    <!-- Or adapt to add height on top / bottom -->
 <style>
   .explanation_portfolio {
     font-size: 14px;
@@ -575,21 +578,10 @@
     </div>
   </section>
 
-  <!-- ======================================================================= -->
+<!-- ======================================================================= -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ======================== BLOG SECTION ============================ -->
+<!-- ======================== BLOG SECTION ============================ -->
   <section id="blog" class="bg-light">
     <div class="container">
       <div class="row">
@@ -619,7 +611,7 @@
 
 
 
-  <!-- =========================== REFERENCE SECTION ============================ -->
+<!-- =========================== REFERENCE SECTION ============================ -->
   <!--
 
   <section id="testimonial">
@@ -732,7 +724,7 @@
 
 
 
-  <!-- ======================= CONTACT SECTION =============================== -->
+<!-- ======================= CONTACT SECTION =============================== -->
 
   <section id="contact" class="bg-light">
     <div class="container">
@@ -766,7 +758,7 @@
 
 
 
-  <!-- ======================== MAP SECTION ============================ -->
+<!-- ======================== MAP SECTION ============================ -->
 
   <style>
     /* Set the size of the div element that contains the map */
@@ -800,7 +792,7 @@
 
 
 
-  <!-- ======================= FOOTER SECTION ================================ -->
+<!-- ======================= FOOTER SECTION ================================ -->
   <footer>
     <div class="container">
       <div class="row">
@@ -841,15 +833,6 @@
   </footer>
 
   <!-- ======================================================================= -->
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1488,7 +1471,7 @@
 
 
 
-  <!-- ======================== JAVASCRIPT SECTION =========================== -->
+<!-- ======================== JAVASCRIPT SECTION =========================== -->
 
 
 
@@ -1505,16 +1488,6 @@
 
   <!-- Load d3.js -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79254642-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-79254642-3');
-  </script>
 
 
 
