@@ -3,6 +3,7 @@
 
 <head>
  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-LF4OPw4yW6LqEuLni+w40WU66t7XpSTVm1GcIy3w5SpdmtXz9r+Yk00KOpWmvlFvSD72uDzMf6W/HbJcvlZoag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -76,7 +77,7 @@
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <img src="img/logo/Home_single_big.png" alt="Home" width="30" height="30" class="d-inline-block align-top" style="margin-right: 5px;">
+      <img src="img/logo/logo.png" alt="Home" width="30" height="30" class="d-inline-block align-top" style="margin-right: 5px;">
     </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -97,6 +98,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="resume.pdf">Resume</a>
         </li>
       </ul>
     </div>
@@ -145,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <style>
   #mainNav {
     background-color: rgba(0,49,53,255); /* Background color with 80% opacity */
-    color:rgba(0,49,53,255) !important; /* Set font color to white */
+    color: rgb(255, 255, 255) !important; /* Set font color to white */
   }
 
   /* Set font color for links */
@@ -162,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <header class="masthead" style="position: relative; text-align: center; max-width: 100%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center;">
   <div id="particles-js" style="position: absolute; width: 100%; height: 100%;"></div>
   <div style="display: flex; align-items: center; justify-content: center; max-width: 100%; margin: 0 auto; z-index: 1; padding: 20px;">
-    <img src="img/logo/Home_single_big.png" alt="Logo" style="width: 200px; margin: 0 10px 3px;">
+    <img src="img/team/YH_pic_square.png" alt="Logo" style="width: 200px; margin: 0 10px 3px;">
     <div class="textlanding" style="text-align: left; max-width: 600px;">
       <p style="margin: 0; font-size: 18px; padding: 0 15px;">
         Hello, I'm Aditya Patel, a passionate data scientist and machine learning engineer. Currently, I am pursuing my master's degree in Data Science at NJIT, where I am expanding my expertise in the field. My hands-on experience extends across diverse projects, covering areas such as machine learning, data mining, and data engineering. Proficient in SQL, Python, and AWS, I bring a comprehensive skill set to the table. Notably, I have gained significant expertise in TensorFlow, Pandas, PyTorch, and various other libraries. My journey has equipped me with a robust theoretical foundation complemented by practical learning. This unique blend enables me to approach challenges with both a deep understanding of concepts and a wealth of practical experience.
@@ -461,140 +465,294 @@ document.addEventListener("DOMContentLoaded", function() {
     <!-- Change image size o have height = 445: convert tmp.png -resize 380x445 new.png -->
     <!-- Add white space on the side to have the good size: convert -size 380x445 xc:white new.png  -gravity center -composite output.png -->
     <!-- Or adapt to add height on top / bottom -->
-<style>
-  .explanation_portfolio {
-    font-size: 14px;
-    margin: 20px;
-  }
-</style>
-
-<section class="bg-light" id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Portfolio</h2>
-        <h3 class="section-subheading text-muted">Overview of Ongoing and Completed Projects</h3>
-      </div>
-    </div>
-    <br><br>
-
-    <div id="portfolio-items" class="row">
-      <div class="col-md-3 col-sm-6 portfolio-item show column">
-        <a class="portfolio-link" data-toggle="modal" href="#ASL">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <p>American Sign Language </p>
-              <hr>
-              <p class="explanation_portfolio">Giving voice to sign language Currently 18% of the population faces difficulty in hearing. Our project aims to develop an artificial voice for the American Sign Language, which would take comouter Vision as input.
-            </div>
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <br>
+            <br>
+            <h1 class="section-heading text-uppercase">Portfolio</h2>
+            <h4 class="section-subheading text-muted">Overview of Ongoing and Completed Projects</h3>
           </div>
-          <img class="img-fluid" src="img/portfolio/asl1.png" alt="">
-        </a>
+        </div>
+        <br><br>
+    
+        <div id="portfolio-items" class="row sepration">
+          <div class="col-md-3 col-sm-6 portfolio-item show column">
+            <a class="portfolio-link" data-toggle="modal" href="#ASL">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <p>American Sign Language </p>
+                  <hr>
+                  <p class="explanation_portfolio">Giving voice to sign language Currently 18% of the population faces difficulty in hearing. Our project aims to develop an artificial voice for the American Sign Language, which would take comouter Vision as input.
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/asl1.png" alt="">
+            </a>
+          </div>
+    
+    
+            <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper dashboard shiny">
+              <a class="portfolio-link" data-toggle="modal" href="#UACMS">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>Universal Athlete Contract Management System
+                    </p>
+                    <hr>
+                    <p class="explanation_portfolio">This project optimizes soccer team decisions in transfer windows by analyzing player stats and aiding informed choices.
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/UACMS1.png" alt="">
+              </a>
+            </div>
+    
+    
+    
+            <div class="col-md-3 col-sm-6 portfolio-item show column dataviz dashboard shiny">
+              <a class="portfolio-link" data-toggle="modal" href="#imdb">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>Warner Bros Studio Analysis</p>
+                    <hr>
+                    <p class="explanation_portfolio">Warner Brothers' business analysis it involves data collection, exploration, business and theatrical analysis, and drawing real-world inferences. 
+                    </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/warnerbros1.png" alt="">
+              </a>
+            </div>
+    
+    
+            <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper shiny">
+              <a class="portfolio-link" data-toggle="modal" href="#website">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>The Portfolio Project</p>
+                    <hr>
+                    <p class="explanation_portfolio">This project chronicles the creation and hosting of this website, achieved without prior web development expertise.</p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/portfolio1.png" alt="">
+              </a>
+            </div>
+    
+            <div class="col-md-3 col-sm-6 portfolio-item show column dataviz mining">
+              <a class="portfolio-link" data-toggle="modal" href="#weatherforecasting">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <p>Weather Forecasting</p>
+                    <hr>
+                    <p class="explanation_portfolio">This Project is still under development</p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/weatherforecasting1.png" alt="">
+              </a>
+            </div>
+    
+        </div>
       </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper dashboard shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#UACMS">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Universal Athlete Contract Management System
-                </p>
-                <hr>
-                <p class="explanation_portfolio">This project optimizes soccer team decisions in transfer windows by analyzing player stats and aiding informed choices.
-                </p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/UACMS1.png" alt="">
-          </a>
-        </div>
-
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz dashboard shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#imdb">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Warner Bros Studio Analysis</p>
-                <hr>
-                <p class="explanation_portfolio">Warner Brothers' business analysis it involves data collection, exploration, business and theatrical analysis, and drawing real-world inferences. 
-                </p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/warnerbros1.png" alt="">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#website">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>The Portfolio Project</p>
-                <hr>
-                <p class="explanation_portfolio">This project chronicles the creation and hosting of this website, achieved without prior web development expertise.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/portfolio1.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz mining">
-          <a class="portfolio-link" data-toggle="modal" href="#weatherforecasting">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Weather Forecasting</p>
-                <hr>
-                <p class="explanation_portfolio">This Project is still under development</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/weatherforecasting1.png" alt="">
-          </a>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
+    </section>
+    
+    <!-- Styling for the Portfolio Section -->
+    <style>
+      .explanation_portfolio {
+        font-size: 14px;
+        margin: 20px;
+      }
+    
+      .sepration .portfolio-item {
+        margin-bottom: 20px; /* Adjust as needed */
+      }
+    
+  
+      /* Hover effect for portfolio items */
+      .portfolio-item .portfolio-hover-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(14,164,176,255);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+    
+      .portfolio-item:hover .portfolio-hover-content {
+        display: block;
+      }
+    
+      /* Link styling */
+      .portfolio-item a {
+        position: relative;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    
 <!-- ======================================================================= -->
 
 
-<!-- ======================== BLOG SECTION ============================ -->
-<section id="blog" class="bg-light" style="margin-top: 0px;">
+
+
+
+
+
+<!-- ======================== LINKEDIN SECTION ============================ -->
+<!--
+LinkedIn Section
+<section id="linkedin" class="bg-light">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <p style="display:inline; font-size: 35px; margin-bottom: 10px;">BLOG</p>
+        <p style="display:inline; font-size: 35px; margin-bottom: 10px;">LINKEDIN</p>
         <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;">
         <p class="section-subheading text-muted" style="margin-bottom: 30px;">
-          Explore my latest blog posts covering finance, data, AI, ML, and recent works on Google Blogger.
+          Check out my recent LinkedIn posts.
         </p>
       </div>
     </div>
 
-
-    
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <a class="btn btn-secondary btn-l text-uppercase font-weight-bold" href="https://blog.theadityapatel.com" target="_blank" style="text-decoration: none; color: black; margin-bottom: 2em;">Visit Blogger</a>
-      </div>
-    </div>    
-
-    <br><br>
-    <div class="row">
-      <!-- First LinkedIn Post -->
+       First LinkedIn Post --> <!--
       <div class="col-lg-4 text-center">
         <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6961934289823260672" height="300" width="355" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
       </div>
 
-      <!-- Second LinkedIn Post -->
+       Second LinkedIn Post --><!--
       <div class="col-lg-4 text-center">
         <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6935567986401386496" height="300" width="355" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
       </div>
 
-      <!-- Third LinkedIn Post -->
+     Third LinkedIn Post --><!--
       <div class="col-lg-4 text-center">
         <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6881717637643042817" height="300" width="355" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+-->
+
+
+
+
+<!-- =========================== REFERENCE SECTION ============================ -->
+ 
+<section id="testimonial" style="background-color: rgba(14,164,176,255); color: rgba(0,49,53,255);">
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 text-center">
+              <img src="img/reference/avinash.jpg" style="border-radius: 50%;" width="170px">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
+              <br>
+              <p style="font-size: 18px;"><i>“I rarely come across real talents who stand out like Aditya. I had the pleasure of working with Aditya for a years at the Cotton Con collaborating on several project teams. Aditya’s ability to handle multiple projects was unlike any I’ve seen before and made a dramatic increase in the productivity level of our company. No matter how tense a meeting, Aditya made sure everyone left with a smile. As a team member or a leader, Aditya earns my highest recommendation."</i></p>
+              <p><a href="https://www.linkedin.com/in/avinash-rai-23415a160/" style="color: white;">Avinash Rai</a> - <span style="font-size: 12px; display: inline;"><i>Software Developer at <a href="https://www.lavamobiles.com" style="color: white;">Lava International</a></i></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 text-center">
+              <img src="img/reference/shruti.jpg" style="border-radius: 50%;" width="170px">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
+              <br>
+              <p style="font-size: 18px;"><i>"Aditya Patel is a Leader with exceptional management with calm and patient nature. He knows well to tackle the problem even at eleventh hour. He is a good example of multi-tasker."</i></p>
+              <p><a href="https://www.linkedin.com/in/shrutiagarwal26/" style="color: white;">Shruti Agarwal</a> - <span style="font-size: 12px; display: inline;"><i>Marketing Executive at <a href="https://www.policybazaar.com" style="color: white;">Policy bazaar</a></i></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 text-center">
+              <img src="img/reference/harshit.jpg" style="border-radius: 50%;" width="170px">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
+              <br>
+              <p style="font-size: 18px;"><i>"I have worked with Aditya at Byju's. He has proved himelf for having a creative mind, being hardworking, team player with sound leadership and strong communications skills. I would recommend him for any organization."</i></p>
+              <p><a href="https://www.linkedin.com/in/harshit-lakhotiya-aaa22116b/" style="color: white;">Harshit Lakhotiya</a> - <span style="font-size: 12px; display: inline;"><i>Team Leader at <a href="https://herovired.com" style="color: white;">Hero Vired</i></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="left: -50px; width: 100px; height: 100px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="font-size: 50px;"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="right: -50px; width: 100px; height: 100px;">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="font-size: 50px;"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <!-- ======================================================================= -->
+
+
+
+
+<!-- ======================== BLOG SECTION ============================ -->
+
+<!-- Blog Section -->
+<!--
+<section id="blog" class="bg-light" style="margin-top: 0px; margin-bottom: 0px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <br>
+        <hr style="width: 100px; height: 3px; border:none;color:rgba(4,73,81,255);background-color:rgba(4,73,81,255);">
+        <p class="section-subheading text-muted" style="margin-bottom: 3px; font-size: 20px; ">Explore my latest blog posts covering finance, data, AI, ML, and recent works on <a href="https://blog.theadityapatel.com" target="_blank"><i class="fa fa-book fa-2x" style="color: rgba(255,72,52,255);"></i></a></p>
+        <hr style="width: 100px; height: 3px; border:none;color:rgba(4,73,81,255);background-color:rgba(4,73,81,255);">
+<br>
+      </div>
+    </div>
+    </div>
+</section>
+
+-->
+
+
+
+<!-- ======================= CONTACT SECTION =============================== -->
+<section id="contact">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Part -->
+      <div class="col-lg-6 text-center" style="background-color: rgba(4,73,81,255); color: white; padding: 0; display: flex; justify-content: center; align-items: center;">
+        <h2 class="section-heading text-uppercase" style="margin: 0;">Contact</h2>
+      </div>
+  
+      <!-- Right Part -->
+      <div class="col-lg-6" style="background-color: white; padding: 0;">
+        <div style="padding: 20px; color: rgba(4,73,81,255);">
+          <p>If you have any inquiries or questions, please feel free to reach out to me. For contributions to open-source projects, kindly consider submitting an issue or pull request on 
+            <a href="https://github.com/AdityaPatel1068" style="color: rgba(4,73,81,255);">
+              <i class="fa fa-github fa-2x"></i>
+            </a>. You can also connect with me on 
+            <a href="https://www.linkedin.com/in/adityapatel2609" style="color: rgba(4,73,81,255);">
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a> to stay updated on my latest endeavors. Alternatively, you may contact me via email at 
+            <a href="mailto:aditya.patel2609@gmail.com" style="color: rgba(4,73,81,255);">
+              <i class="fa fa-envelope fa-2x"></i>
+            </a>.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -605,158 +763,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-<!-- =========================== REFERENCE SECTION ============================ -->
-  <!--
 
-  <section id="testimonial">
-    <div class="container">
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
 
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
-                <img src="img/reference/DGouache.png" style="border-radius: 50%" width="170px">
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
-                <br>
-                <p style="color: grey; font-size: 8"><i>"[...] Yan did an absolutely brilliant job. He has multiple
-                    skills and qualities making him a great data science project member, and even leader : excellent
-                    knowledge and learning ability of diverse statistical and data management tools obviously, and a
-                    real knack for data viz."</i></p>
-                <p><a href="https://www.linkedin.com/in/david-gouache-88097462/">D. Gouache</a> - <span
-                    style="font-size: 12px; display: inline;"><i>Deputy Director at <a
-                        href="http://www.terresinovia.fr">Terres Inovia</a></i></span></p>
-              </div>
-            </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
-                <img src="img/reference/JDavid.jpg" style="border-radius: 50%" width="170px">
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
-                <br>
-                <p style="color: grey; font-size: 8"><i>"Yan always performed with outstanding skills and impressive
-                    capacity for adaptation and efficiency. His job was crucial for the publication of important
-                    results. [...] I thus highly recommend him for any work concering framing and analysis of huge data
-                    sets."</i></p>
-                <p><a href="https://www.researchgate.net/profile/Jacques_David4">J. David</a> - <span
-                    style="font-size: 12px; display: inline;"><i>Professor at <a
-                        href="https://www.montpellier-supagro.fr">Montpellier Supagro</a></i></span></p>
-              </div>
-            </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
-                <img src="img/reference/SGlemin.jpg" style="border-radius: 50%" width="170px">
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
-                <br>
-                <p style="color: grey; font-size: 8"><i>"I worked with Yan for several collaborative projects on genomic
-                    data analysis. Yan was very efficient and highly reactive to our requests and he was also autonomous
-                    to find the best solutions to the problems we submitted to him."</i></p>
-                <p><a href="https://www.researchgate.net/profile/Jacques_David4">S. Glémin</a> - <span
-                    style="font-size: 12px; display: inline;"><i>Senior Researcher at <a
-                        href="https://www.montpellier-supagro.fr">CNRS</a></i></span></p>
-              </div>
-            </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
-                <img src="img/reference/JMGrath.jpg" style="border-radius: 50%;" width="170px">
-              </div>
-              <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
-                <br>
-                <p style="color: grey; font-size: 8"><i>"Yan has taught me everything I know about data visualization!
-                    He taught my group how to display data in clever ways, and has been responsible for our recent
-                    interactive website related to psychiatric epidemiology.<br><br>Also, he is a super-fast and
-                    efficient bioinformatician. He has set up a pipeline to handle large genetic datasets and apply
-                    modern analytic methods to explore the genetic architecture of traits and disorders.<br><br>He is a
-                    super-bright guy – I can highly recommend him!"</i></p>
-                <p><a href="https://twitter.com/John_J_McGrath?lang=en">John McGrath</a> - <span
-                    style="font-size: 12px; display: inline;"><i>Senior Researcher at the <a
-                        href="https://qbi.uq.edu.au">Queensland Brain Institute</a></i></span></p>
-              </div>
-            </div>
-          </div>
 
-        </div>
 
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
 
-    </div>
-  </section>
+<!-- MAP SECTION -->
+<!--
+<section id="map" style="height: 300px; background-color: rgb(39, 33, 33);"></section>
 -->
-
-  <!-- ======================================================================= -->
-
-
-
-<!-- ======================= CONTACT SECTION =============================== -->
-
-  <section id="contact" class="bg-light">
-    <div class="container" >
-      <div class="row">
-        <div class="col-lg-2 text-center"></div>
-        <div class="col-lg-8 text-center">
-          <br><br><br>
-          <h2 class="section-heading text-uppercase" style="color: black">Contact</h2>
-          <p>Feel free to contact me for any question. For open source projects, please open an issue or pull request on
-            <a href="https://github.com/AdityaPatel1068">Github</a>. If you want to follow my work, reach me on <a
-              href="https://www.linkedin.com/in/adityapatel2609">linkedin</a>. Otherwise, send me an email at <a
-              href="mailto:aditya.patel2609@gmail.com">aditya.patel2609@gmail.com</a>.</p>
-              <div class="row justify-content-center">
-                <a class="btn btn-secondary btn-l text-uppercase font-weight-bold mr-2" href="https://github.com/AdityaPatel1068" target="_blank">Github</a>
-                <a class="btn btn-secondary btn-l text-uppercase font-weight-bold mr-2" href="https://www.linkedin.com/in/adityapatel2609" target="_blank">LinkedIn</a>
-                <a class="btn btn-secondary btn-l text-uppercase font-weight-bold" href="mailto:aditya.patel2609@gmail.com">Mail</a>
-              </div>
-              
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-<!-- ======================== MAP SECTION ============================ -->
-
-  <style>
-    /* Set the size of the div element that contains the map */
-    #map {
-      height: 300px;
-      /* The height is 400 pixels */
-      width: 100%;
-      /* The width is the width of the web page */
-      background-color: rgb(39, 33, 33);
-      opacity: 1
-    }
-  </style>
-  <!-- center: { lat: 40.731510, lng: -74.174393 } -->
-
-  <!--The div element for the map -->
-  <div id="map"></div>
-  <script>
+<!-- JavaScript for Leaflet map -->
+<!--
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
     var mymap = L.map('map').setView([40.731510, -74.174393], 3);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -767,53 +790,53 @@ document.addEventListener("DOMContentLoaded", function() {
       accessToken: 'pk.eyJ1IjoiaG9sdHp5YW4iLCJhIjoiY2tmczBrd3BrMGJodDJ0bXQ5aW9sZXJ6eCJ9.8zTEkfZ54u4TvDGNjNh-Cg'
     }).addTo(mymap);
     var marker = L.marker([40.731510, -74.174393]).addTo(mymap);
-  </script>
+  });
+</script>
+-->
 
 
 
 
-
-<!-- ======================= FOOTER SECTION ================================ -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Aditya Patel 2023</span>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com/_.aditya.patel._">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/AdityaPatel1068">
-                <i class="fa fa-github"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/adityapatel2609">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-          </ul>
-        </div>
+<!-- ======================== Footer SECTION ============================ -->
+<footer style="background-color: rgba(174, 221, 229, 255); color: rgba(0, 49, 53, 255); padding-bottom: 50px ; padding-top: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <span class="copyright">If You liked the website &copy; just clone it</span>
+      </div>
+      <div class="col-md-4 text-center">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/_.aditya.patel._" style="color: rgba(0, 49, 53, 255);">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/AdityaPatel1068" style="color: rgba(0, 49, 53, 255);">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/adityapatel2609" style="color: rgba(0, 49, 53, 255);">
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center">
+        <ul class="list-inline quicklinks">
+          <li class="list-inline-item">
+            <a href="#" style="color: rgba(0, 49, 53, 255);">Privacy Policy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" style="color: rgba(0, 49, 53, 255);">Terms of Use</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </footer>
-
-  <!-- ======================================================================= -->
+  </div>
+</footer>
+<!-- ======================================================================= -->
 
 
 
@@ -1143,29 +1166,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-<!-- ======================== JAVASCRIPT SECTION =========================== -->
 
-
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
-  <script src="js/portfolio.js"></script>
-
-  <!-- Load d3.js -->
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-
-
-
-
-
-  <!-- ======================================================================= -->
 </body>
 
 </html>
