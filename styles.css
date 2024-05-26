@@ -1,0 +1,291 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', 'Kaushan Script', 'Droid Serif', 'Roboto Slab', sans-serif;
+    padding-top: 50px; /* Adjusted value based on your navbar height */
+}
+
+@media (min-width: 800px) {
+    body {
+        padding-top: 70px; /* Adjust for larger screens if navbar height is different */
+    }
+}
+
+.navbar,
+.navbar-nav .nav-link,
+#mainNav {
+    background-color: rgba(0,49,53,255); /* Background color with 80% opacity */
+    color: rgb(255, 255, 255) !important; /* Set font color to white */
+}
+
+.navbar-brand img {
+    margin-right: 5px;
+}
+
+/* Landing Section */
+.masthead {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.masthead-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 20px;
+}
+
+.masthead-logo {
+    width: 200px;
+    margin: 0 10px 3px;
+    border-radius: 50%;
+}
+
+.textlanding,
+.list-inline {
+    text-align: left;
+    max-width: 600px;
+    list-style: none;
+    padding: 0;
+}
+
+.logos {
+    font-size: 2em; /* Increase the size of the icons */
+    color: #69b3a2; /* Set icon color */
+    margin: 0 10px; /* Add some space around icons */
+}
+
+/* Timeline Section */
+#timeline {
+    background-color: rgba(4,73,81,255);
+    color: rgba(4,73,81,255);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#timeline text {
+    fill: white;
+}
+
+#timeline line {
+    stroke: rgba(150,72,52,255);
+}
+
+#timeline circle {
+    fill: rgba(150,72,52,255);
+    stroke: rgba(150,72,52,255);
+}
+
+/* Portfolio Section */
+.explanation_portfolio {
+    font-size: 14px;
+    margin: 20px;
+}
+
+.sepration .portfolio-item {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.portfolio-item .portfolio-hover-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(14,164,176,255);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-hover-content {
+    display: block;
+}
+
+.portfolio-item a {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Testimonial Section */
+#testimonial {
+    background-color: rgba(14,164,176,255);
+    color: rgba(0,49,53,255);
+}
+
+#testimonial img {
+    border-radius: 50%;
+}
+
+#testimonial p {
+    font-size: 18px;
+}
+
+#testimonial .carousel-control-prev,
+#testimonial .carousel-control-next {
+    left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+#testimonial .carousel-control-next {
+    right: -50px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+}
+
+.contact-left {
+    background-color: rgba(4,73,81,255);
+    color: white;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-right {
+    background-color: white;
+    padding: 0;
+}
+
+.contact-content {
+    padding: 20px;
+    color: rgba(4,73,81,255);
+}
+
+.contact-link {
+    color: rgba(4,73,81,255);
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: rgba(174, 221, 229, 255);
+    color: rgba(0, 49, 53, 255);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.social-link,
+.quicklink {
+    color: rgba(0, 49, 53, 255);
+}
+
+/* Modal Styles */
+.modal-content {
+    overflow: auto;
+}
+
+.modal-dialog.h-100 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal-body {
+    text-align: left;
+}
+
+.modal-body img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.close-modal .lr {
+    width: 70px;
+    height: 70px;
+}
+
+.close-modal .lr .rl {
+    width: 30px;
+    height: 30px;
+}
+
+/* Additional Styles */
+.objective h6 {
+    margin-bottom: 10px;
+}
+
+.objective p,
+.project-details p {
+    margin-bottom: 10px;
+}
+
+.objective img,
+.project-details img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.links,
+.contact-links,
+.additional-links {
+    margin-top: 5px;
+}
+
+.contact-links {
+    margin-top: 15px;
+}
+
+/* Styles for American Sign Language (ASL) Project */
+.project-structure {
+    margin-top: 20px;
+}
+
+.project-structure .section {
+    margin-bottom: 20px;
+}
+
+/* Styles for Warner Bros Studio Analysis */
+.project-details {
+    text-align: left;
+}
+
+.project-details img {
+    width: 100%;
+}
+
+/* Styles for Aditya Patel's Portfolio Website Journey */
+.project-details {
+    text-align: left;
+}
+
+.contact-links {
+    margin-top: 15px;
+}
+
+/* Styles for Weather Forecasting project */
+.project-details {
+    text-align: left;
+}
+
+.contact-links {
+    margin-top: 15px;
+}
