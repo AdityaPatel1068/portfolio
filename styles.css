@@ -126,9 +126,13 @@ body {
 
 /* Testimonial Section */
 #testimonial {
-    background-color: rgba(14,164,176,255);
-    color: rgba(0,49,53,255);
+    background-color: rgba(14, 164, 176, 255);
+    color: rgba(0, 49, 53, 255);
+    position: relative; /* Ensure positioning context */
+    margin-bottom: 0; /* Remove bottom margin */
+    padding-bottom: 0; /* Remove bottom padding */
 }
+
 
 #testimonial img {
     border-radius: 50%;
@@ -138,20 +142,24 @@ body {
     font-size: 18px;
 }
 
-#testimonial .carousel-control-prev,
-#testimonial .carousel-control-next {
-    left: -50px;
+#testimonial .carousel-control-prev {
+    left: -50px; /* Adjust the position of the left arrow key */
     width: 100px;
     height: 100px;
+    z-index: 1; /* Ensure it's above the carousel */
 }
 
 #testimonial .carousel-control-next {
-    right: -50px;
+    right: -100px; /* Adjust the position of the right arrow key */
+    width: 100px;
+    height: 100px;
+    z-index: 1; /* Ensure it's above the carousel */
 }
+
 
 /* Contact Section */
 .contact-section {
-    padding: 50px 0;
+    padding-top: 0; /* Remove top padding */
 }
 
 .contact-left {
@@ -169,7 +177,7 @@ body {
 }
 
 .contact-content {
-    padding: 20px;
+    padding: 40px;
     color: rgba(4,73,81,255);
 }
 
@@ -289,3 +297,115 @@ body {
 .contact-links {
     margin-top: 15px;
 }
+
+@media screen and (max-width:600px)
+{
+        /* Global Styles */
+        body {
+            padding-top: 30px; /* Adjusted value for smaller screens */
+        }
+        .masthead-logo {
+            width: 150px; /* Decrease the size of the logo */
+        }
+        .textlanding,
+        .list-inline {
+            max-width: 400px; /* Decrease the max-width of the text and list */
+        }
+        .logos {
+            font-size: 1.5em; /* Decrease the size of the icons */
+        }
+        /* Portfolio Section */
+        .explanation_portfolio {
+            font-size: 12px; /* Decrease the font size of the explanation */
+        }
+        /* Testimonial Section */
+        #testimonial p {
+            font-size: 16px; /* Decrease the font size of the testimonial text */
+        }
+        #testimonial .carousel-control-prev {
+            left: -30px; /* Adjust the position of the left arrow key */
+            width: 70px;
+            height: 70px;
+        }
+        #testimonial .carousel-control-next {
+            right: -70px; /* Adjust the position of the right arrow key */
+            width: 70px;
+            height: 70px;
+        }
+        /* Contact Section */
+        .contact-content {
+            padding: 20px; /* Decrease the padding of the contact content */
+        }
+        /* Footer Section */
+        .footer-section {
+            padding-bottom: 30px; /* Decrease the bottom padding of the footer */
+            padding-top: 30px; /* Decrease the top padding of the footer */
+        }
+        /* Modal Styles */
+        .modal-body {
+            padding: 20px; /* Decrease the padding of the modal body */
+        }
+        .close-modal {
+            top: 15px; /* Adjust the position of the close button */
+            right: 15px; /* Adjust the position of the close button */
+        }
+        .close-modal .lr {
+            width: 50px; /* Decrease the width of the close button */
+            height: 50px; /* Decrease the height of the close button */
+        }
+        .close-modal .lr .rl {
+            width: 20px; /* Decrease the width of the close button */
+            height: 20px; /* Decrease the height of the close button */
+        }
+        /* Additional Styles */
+        .objective h6 {
+            margin-bottom: 5px; /* Decrease the margin bottom of the objective heading */
+        }
+        .objective p,
+        .project-details p {
+            margin-bottom: 5px; /* Decrease the margin bottom of the paragraphs */
+        }
+        .objective img,
+        .project-details img {
+            margin-top: 10px; /* Decrease the margin top of the images */
+            margin-bottom: 10px; /* Decrease the margin bottom of the images */
+        }
+        .links,
+        .contact-links,
+        .additional-links {
+            margin-top: 3px; /* Decrease the margin top of the links */
+        }
+        .contact-links {
+            margin-top: 10px; /* Decrease the margin top of the contact links */
+        }
+        /* Styles for American Sign Language (ASL) Project */
+        .project-structure {
+            margin-top: 10px; /* Decrease the margin top of the project structure */
+        }
+        .project-structure .section {
+            margin-bottom: 10px; /* Decrease the margin bottom of the sections */
+        }
+        /* Styles for Warner Bros Studio Analysis */
+        .project-details {
+            text-align: center; /* Center align the project details */
+        }
+        .project-details img {
+            width: 80%; /* Decrease the width of the images */
+        }
+        /* Styles for Aditya Patel's Portfolio Website Journey */
+        .project-details {
+            text-align: center; /* Center align the project details */
+        }
+        .contact-links {
+            margin-top: 10px; /* Decrease the margin top of the contact links */
+        }
+        /* Styles for Weather Forecasting project */
+        .project-details {
+            text-align: center; /* Center align the project details */
+        }
+        .contact-links {
+            margin-top: 10px; /* Decrease the margin top of the contact links */
+        }
+    }
+
+
