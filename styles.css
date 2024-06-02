@@ -128,38 +128,80 @@ body {
 #testimonial {
     background-color: rgba(14, 164, 176, 255);
     color: rgba(0, 49, 53, 255);
-    position: relative; /* Ensure positioning context */
-    margin-bottom: 0; /* Remove bottom margin */
-    padding-bottom: 0; /* Remove bottom padding */
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 250px;
 }
 
-
 #testimonial img {
-    border-radius: 50%;
+    margin-top: 30px;
+    border-radius: 75px;
+    width: 200px; /* Limit the maximum width of the images */
+    height: 200px;
+
 }
 
 #testimonial p {
     font-size: 18px;
+    line-height: 1.5; /* Adjust the line height for better readability */
+}
+
+#testimonial .carousel-control-prev,
+#testimonial .carousel-control-next {
+    width: 30px; /* Adjust the width of the control buttons */
+    height: 30px; /* Adjust the height of the control buttons */
+    font-size: 24px; /* Adjust the font size of the control buttons */
+    background-color: rgba(255, 255, 255, 0.5); /* Change the background color of the control buttons */
+    color: rgba(0, 49, 53, 255); /* Change the color of the control buttons */
+    border-radius: 50%; /* Make the control buttons circular */
+    top: 50%; /* Position the control buttons vertically centered */
+    transform: translateY(-50%); /* Center the control buttons vertically */
 }
 
 #testimonial .carousel-control-prev {
-    left: -50px; /* Adjust the position of the left arrow key */
-    width: 100px;
-    height: 100px;
-    z-index: 1; /* Ensure it's above the carousel */
+    left: -30px; /* Adjust the position of the left control button */
 }
 
 #testimonial .carousel-control-next {
-    right: -100px; /* Adjust the position of the right arrow key */
-    width: 100px;
-    height: 100px;
-    z-index: 1; /* Ensure it's above the carousel */
+    right: -80px; /* Adjust the position of the right control button */
 }
+
+#testimonial .carousel-indicators {
+    bottom: 10px; /* Adjust the position of the carousel indicators */
+}
+
+#testimonial .carousel-indicators li {
+    width: 2px; /* Adjust the width of the carousel indicators */
+    height: 2px; /* Adjust the height of the carousel indicators */
+    border-radius: 50%; /* Make the carousel indicators circular */
+    background-color: rgba(255, 255, 255, 0.5); /* Change the background color of the carousel indicators */
+    margin-right: 5px; /* Add spacing between the carousel indicators */
+    margin-left: 5px; /* Add spacing between the carousel indicators */
+}
+
+#testimonial .carousel-indicators .active {
+    background-color: rgba(255, 255, 255, 1); /* Change the background color of the active carousel indicator */
+}
+
+
+
 
 
 /* Contact Section */
 .contact-section {
-    padding-top: 0; /* Remove top padding */
+    padding-top: 10;
+    width: 100%;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 .contact-left {
@@ -169,45 +211,85 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 25%; /* 25% width */
+    text-align: center;
+    min-height: 100px; /* Ensures some minimum height */
 }
 
 .contact-right {
     background-color: white;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 75%; /* 75% width */
+    text-align: left;
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box;
 }
 
 .contact-content {
-    padding: 40px;
+    padding: 20px;
     color: rgba(4,73,81,255);
+    width: 100%;
 }
 
 .contact-link {
     color: rgba(4,73,81,255);
+    text-decoration: none;
+    margin-right: 10px; /* Space between icons and text */
 }
+
+.contact-link i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+
+
+
 
 /* Footer Section */
-.footer-section {
-    background-color: rgba(174, 221, 229, 255);
-    color: rgba(0, 49, 53, 255);
-    padding-bottom: 50px;
-    padding-top: 50px;
+.footer-section .container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-wrap: wrap;
+    text-align: center; /* Ensure text is centered */
 }
 
-.social-link,
-.quicklink {
-    color: rgba(0, 49, 53, 255);
+.footer-section .row {
+    width: 100%;
 }
+
+.footer-section .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer-section .social-buttons .social-link,
+.footer-section .quicklinks .quicklink {
+    color: #343a40; /* Example text color */
+    text-decoration: none;
+}
+
+.footer-section .social-buttons .social-link:hover,
+.footer-section .quicklinks .quicklink:hover {
+    color: #007bff; /* Example hover color */
+}
+
+
+
 
 /* Modal Styles */
-.modal-content {
-    overflow: auto;
-}
-
-.modal-dialog.h-100 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.modal-dialog {
+    max-width: 60vw; /* Set maximum width of modal dialog */
 }
 
 .modal-body {
@@ -215,88 +297,24 @@ body {
 }
 
 .modal-body img {
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
+    max-width: 80%;
+    
 }
 
 .close-modal {
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
 }
 
-.close-modal .lr {
-    width: 70px;
-    height: 70px;
+/* Portfolio Modal Specific Styles */
+.portfolio-modal.modal {
+    z-index: 1050; /* Ensure modal appears on top of other content */
+    overflow-y: auto; /* Allow vertical scrolling if content exceeds modal height */
 }
 
-.close-modal .lr .rl {
-    width: 30px;
-    height: 30px;
-}
-
-/* Additional Styles */
-.objective h6 {
-    margin-bottom: 10px;
-}
-
-.objective p,
-.project-details p {
-    margin-bottom: 10px;
-}
-
-.objective img,
-.project-details img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.links,
-.contact-links,
-.additional-links {
-    margin-top: 5px;
-}
-
-.contact-links {
-    margin-top: 15px;
-}
-
-/* Styles for American Sign Language (ASL) Project */
-.project-structure {
-    margin-top: 20px;
-}
-
-.project-structure .section {
-    margin-bottom: 20px;
-}
-
-/* Styles for Warner Bros Studio Analysis */
-.project-details {
-    text-align: left;
-}
-
-.project-details img {
-    width: 100%;
-}
-
-/* Styles for Aditya Patel's Portfolio Website Journey */
-.project-details {
-    text-align: left;
-}
-
-.contact-links {
-    margin-top: 15px;
-}
-
-/* Styles for Weather Forecasting project */
-.project-details {
-    text-align: left;
-}
-
-.contact-links {
-    margin-top: 15px;
-}
 
 @media screen and (max-width:600px)
 {
